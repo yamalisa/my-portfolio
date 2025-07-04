@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K LINE 採用模写</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <!-- ヘッダーの .container 内に入れる -->
+      <button class="menu-toggle" aria-label="メニューを開く">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+          <img src="img/logo.svg" alt="K LINEロゴ" class="logo">
+          <button class="menu-toggle" aria-label="メニューを開く">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <nav class="nav">
+            <ul>
+              <li><a href="#hero">トップ</a></li>
+              <li><a href="#about">企業情報</a></li>
+              <li><a href="#land">陸上職</a></li>
+              <li><a href="#marine">海上職</a></li>
+              <li><a href="#entry">エントリー</a></li>
+            </ul>
+          </nav>
+          <!-- ハンバーガーメニュー -->
+          <div class="hamburger" id="hamburger">
+             <span></span>
+             <span></span>
+             <span></span>
+          </div>
+        </div>
+      </header>
+    
+      <!-- メインビジュアル -->
+        <section id="hero" class="hero" data-aos="fade-up">
+        <div class="hero-text">
+          <h1>きみは、世界をどうつなぐ？</h1>
+          <p>“K” LINE 採用サイトへようこそ</p>
+        </div>
+      </section>
+      <!-- 会社紹介セクション -->
+<section id="about" class="about-section" data-aos="fade-up">
+  <div class="container">
+    <h2>会社紹介</h2>
+    <p>
+      川崎汽船“K” LINEは、世界の海運を支えるグローバルな総合物流企業です。<br>
+      私たちは「海を通じて世界をつなぐ」という使命のもと、多様な船種と最先端の技術で社会に貢献しています。
+    </p>
+  </div>
+</section>
+<!-- 採用情報セクション -->
+<section id="entry" class="recruit">
+  <div class="container">
+    <h2>採用情報</h2>
+    <div class="job-cards" data-aos="fade-right">
+      <!-- 陸上職カード -->
+      <div class="job-card">
+        <img src="img/land.jpg" alt="陸上職">
+        <h3>陸上職</h3>
+        <p>世界を支える物流の中枢を陸からサポート。グローバルに活躍するチャンスがあります。</p>
+      </div>
+      <!-- 海上職カード -->
+      <div class="job-card" data-aos="fade-left">
+        <img src="img/sea.jpg" alt="海上職">
+        <h3>海上職</h3>
+        <p>世界の海を舞台に働く仕事。最先端の船で安全かつ効率的な運航を担います。</p>
+      </div>
+    </div>
+    <div class="entry-btn-area" style="text-align: center; margin-top: 30px;">
+      <a href="#" class="btn">エントリーはこちら</a>
+    </div>
+  </div>
+</section>
+<!-- ストーリーセクション -->
+<section id="story" class="story-section">
+  <div class="container">
+    <h2>社員ストーリー</h2>
+    <div class="story-cards">
+      <div class="story-card" data-aos="fade-right">
+        <img src="img/interview1.jpg" alt="社員1">
+        <div class="story-text">
+          <h3>海の最前線で働く喜び</h3>
+          <p>安全運航のために、日々の連携と判断力が問われる現場。やりがいのある仕事です。</p>
+        </div>
+      </div>
+      <div class="story-card" data-aos="fade-left">
+        <img src="img/interview2.jpg" alt="社員2">
+        <div class="story-text">
+          <h3>陸から世界をつなぐ</h3>
+          <p>グローバルな調整力とチームワークで、円滑な物流を実現しています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- フッター -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">“K” LINE</div>
+    <ul class="footer-nav">
+      <li><a href="#">トップ</a></li>
+      <li><a href="#">企業情報</a></li>
+      <li><a href="#">陸上職</a></li>
+      <li><a href="#">海上職</a></li>
+      <li><a href="#">エントリー</a></li>
+    </ul>
+    <p class="copyright">© 2025 Kawasaki Kisen Kaisha, Ltd. All Rights Reserved.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // アニメーションの時間（ミリ秒）
+    once: true      // スクロール時1回だけ実行
+  });
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
